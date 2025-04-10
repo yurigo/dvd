@@ -104,18 +104,14 @@ function animate() {
 
 window.requestAnimationFrame(animate);
 
-// Add event listener to change color on click
 canvas.addEventListener(
   "click",
-  (e) => {
-    console.log("clicked");
-
+  () => {
     changeColor();
   },
   false
 );
 
-// Add event listener to change color on key press
 document.addEventListener("keydown", (event) => {
   if (event.key === " ") {
     changeColor();
@@ -124,17 +120,9 @@ document.addEventListener("keydown", (event) => {
 
 lightswitch.addEventListener("change", (event) => {
   event.stopPropagation();
-  console.log("lightswitch toggled");
-
   dvd.classList.toggle("on");
-  // if (event.target.checked) {
-  //   document.body.classList.add("dark-mode");
-  // } else {
-  //   document.body.classList.remove("dark-mode");
-  // }
 });
 
 $("#controls > label").addEventListener("click", (event) => {
   event.stopPropagation();
-  console.log("lightswitch clicked");
 });
