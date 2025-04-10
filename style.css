@@ -6,13 +6,13 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #111;
 }
 
 main {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   margin: 0 auto;
-  background-color: #111;
   display: flex;
   justify-content: end;
   align-items: end;
